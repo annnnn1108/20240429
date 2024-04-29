@@ -1,6 +1,6 @@
 var captureGraphics
 var capture_width =640
-var capture_height =640
+var capture_height =480
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
@@ -8,8 +8,8 @@ function setup() {
   capture.size(capture_width,capture_height);//設定顯示畫面大小
   captureGraphics =createGraphics(capture_width,capture_height)
   captureGraphics =createGraphics(capture_width,480)
-  capture.translate(capture_width,0)
-  capture.scale(-1,1)
+  captureGraphics.translate(capture_width,0)
+  captureGraphics.scale(-1,1)
   capture.hide()
   //旋鈕的介面
   var radioElement =createRadio();
@@ -24,6 +24,8 @@ function setup() {
 function draw() {
   background(220);
   noStroke()
+  span= 5+map(mouseX,0,width,0,20)
+  var span=10
   push()
   translate(width/2-capture_width, height/2-capture_height) //把原點移到(width/2-160, height/2-120)
   image(capture,0,0) //在(0,0)
