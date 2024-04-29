@@ -22,7 +22,7 @@ function draw() {
     for(var y=0;y<captureGraphics.height ;y=y+span){
       var pixel =captureGraphics.get(x,y)
       fill(pixel)
-      rect(x,y,10)
+      rect(x,y)
     }
   }
   pop()
