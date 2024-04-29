@@ -1,6 +1,6 @@
 var captureGraphics
 var capture_width =640
-var capture_height =480
+var capture_height =640
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
