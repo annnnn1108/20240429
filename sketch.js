@@ -28,7 +28,7 @@ function draw() {
   var span=10
   push()
   translate(width/2-capture_width, height/2-capture_height) //把原點移到(width/2-160, height/2-120)
-  captureGraphics.image(capture,0,0) //在(0,0)
+  image(capture,0,0) //在(0,0)
   for(var x =0;x<captureGraphics.width;x=x+span){
     for(var y=0;y<captureGraphics.height ;y=y+span){
       var pixel =captureGraphics.get(x,y)
